@@ -1,0 +1,38 @@
+COMPLAINT INTAKE FORM
+=====================
+
+Case Reference: CC-2026-0455
+Date Received: 21 March 2026
+Channel: Phone, transcribed by agent
+
+Customer Name: Meera Shah
+Email: meera.shah@example.net
+Phone: +91 99201 44580
+Invoice Number: INV-2026-3391
+
+Product/Service: NimbusHome Air Purifier X2 (purchased 14 months ago)
+
+Complaint Description:
+The unit has stopped drawing air and displays error E07 on the front panel.
+This is the third time the same fault has occurred. The unit was repaired under
+warranty in August 2025 and again in December 2025.
+
+Issue Details:
+The customer says the fault reappeared four days after the second repair was
+returned. The device is 14 months old and still inside the 24-month hardware
+warranty. Under the warranty policy a third failure for the same fault requires
+a replacement rather than a further repair.
+
+Supporting Information:
+The customer emailed photographs of the error display and a copy of the original
+invoice.
+
+Resolution Provided:
+A replacement unit has been requested and a loan purifier was shipped on
+22 March while the replacement is prepared.
+
+Escalation Information:
+Escalated to the service manager because this is a repeat failure and the
+customer has asked for confirmation in writing.
+
+Case Status: In progress

@@ -1,0 +1,14 @@
+# Never commit your API key
+.env
+
+# Generated results
+output/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Ignore files generated for Development Purpose
+IgnoredFiles/

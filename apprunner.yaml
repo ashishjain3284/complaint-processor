@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------------------
+# AWS App Runner - build straight from the GitHub repository.
+#
+# This is the Docker-free route on AWS. App Runner reads this file, installs
+# the dependencies and starts the app itself, so nothing has to be built or
+# pushed from your machine.
+#
+# In the App Runner console choose:
+#     Source          -> Source code repository -> your GitHub repo
+#     Configuration   -> Use a configuration file   (this file)
+#
+# THE API KEY DOES NOT GO IN THIS FILE. This file is committed to GitHub.
+# Set OPENAI_API_KEY in the App Runner console under
+# Configuration -> Environment variables, or point it at an AWS Secrets
+# Manager secret.
+# ---------------------------------------------------------------------------
+
+version: 1.0
+runtime: python311
+
+build:
+  commands:
+    build:
+      - pip install --no-cache-dir -r requirements.txt
+
+run:
+  # The same command the Dockerfile uses.
+  #
+  #   --server.address 0.0.0.0    listen on every interface, or App Runner
+  #                               cannot reach the app
+  #   --server.headless true      do not try to open a browser
+  #   --server.enableCORS false   the app sits behind App Runner's HTTPS proxy
+  #   --server.enableXsrfProtection false
+  #                               same reason; without it the websocket can be
+  #                               broken by the proxy and the page never loads
+  command: >
+    streamlit run streamlit_app.py
+    --server.port 8501
+    --server.address 0.0.0.0
+    --server.headless true
+    --server.enableCORS false
+    --server.enableXsrfProtection false
+    --browser.gatherUsageStats false
+
+  network:
+    port: 8501
+
+  env:
+    # Print log lines immediately so the App Runner log stream is live.
+    - name: PYTHONUNBUFFERED
+      value: "1"

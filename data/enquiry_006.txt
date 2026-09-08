@@ -1,0 +1,28 @@
+CUSTOMER ENQUIRY
+================
+
+Reference: ENQ-2026-1180
+Date Received: 28 March 2026
+Channel: Web chat
+
+Customer Name: Kenji Tanaka
+Email: k.tanaka@example.jp
+
+Product/Service: NimbusHome Filter Pack
+
+Enquiry:
+The customer asked how often the filter should be replaced in a household with
+two pets, and whether a subscription is available that ships filters
+automatically every three months.
+
+Agent Response:
+Provided the recommended replacement interval and a link to the subscription
+page. The customer thanked the agent and said he would sign up.
+
+Supporting Information:
+None.
+
+Escalation Information:
+None.
+
+Status: Closed - no complaint raised

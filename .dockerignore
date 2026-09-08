@@ -1,0 +1,24 @@
+# Keep the image small, and keep secrets out of it.
+
+# The API key must never be baked into the image - it is supplied at run time.
+.env
+
+# Generated results
+output/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Git and CI
+.git/
+.gitignore
+.github/
+
+# Documentation and reports - not needed by the running application
+docs/
+*.md
+!README.md

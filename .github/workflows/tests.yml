@@ -1,0 +1,40 @@
+# GitHub Actions: run the tests automatically on every push to GitHub.
+#
+# Once this file is in your repository, GitHub shows a green tick next to each
+# commit when the tests pass. That is the visible proof of the Git/GitHub and
+# testing parts of the project.
+
+name: Tests
+
+# Run whenever code is pushed, and on every pull request.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Get a copy of the repository
+      - name: Check out the code
+        uses: actions/checkout@v4
+
+      # 2. Install Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 3. Install the project's packages
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest
+
+      # 4. Run the tests
+      #    No OpenAI key is needed - the tests never call the API.
+      - name: Run tests
+        run: pytest -v

@@ -1,0 +1,16 @@
+# Install everything with:   pip install -r requirements.txt
+
+openai>=1.40
+langchain-core>=0.3
+langchain-openai>=0.2
+langgraph>=0.2.28
+pydantic>=2.7
+python-dotenv>=1.0
+pypdf>=4.2
+python-docx>=1.1
+
+# For the web interface:  streamlit run streamlit_app.py
+streamlit>=1.36
+
+# For running the tests:  pytest -v
+pytest>=8.0
