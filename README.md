@@ -187,8 +187,8 @@ a docstring.
 
 ```bash
 # 1. Get the project
-git clone https://github.com/ashishjain3284/IITPatnaFinalEvaluation.git
-cd IITPatnaFinalEvaluation/complaint-processor
+git clone https://github.com/ashishjain3284/complaint-processor.git
+cd complaint-processor
 
 # 2. (Recommended) create a virtual environment
 python -m venv .venv
