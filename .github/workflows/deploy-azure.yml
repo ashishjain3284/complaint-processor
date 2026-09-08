@@ -6,7 +6,7 @@ on:
   workflow_dispatch:        # lets you run it manually from the Actions tab
 
 env:
-  REGISTRY: crcomplaint12345.azurecr.io
+  REGISTRY: crcomplaint18922.azurecr.io
   IMAGE: complaint-processor
 
 jobs:
