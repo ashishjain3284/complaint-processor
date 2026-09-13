@@ -539,7 +539,7 @@ platform, which gives a public HTTPS URL.
 | `Dockerfile` | Builds the container image. Azure builds it for you in the cloud |
 | `.dockerignore` | Keeps `.env`, `output/` and `docs/` out of the image |
 | `apprunner.yaml` | Lets AWS App Runner build and start the app straight from GitHub |
-| `DEPLOYMENT.md` | Step-by-step commands for Azure and for AWS |
+
 
 The six original modules are unchanged.
 
