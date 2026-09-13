@@ -22,3 +22,6 @@ venv/
 docs/
 *.md
 !README.md
+
+# Ignore files generated for Development Purpose
+IgnoredFiles/
